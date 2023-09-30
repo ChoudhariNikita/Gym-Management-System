@@ -1,156 +1,158 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>INTENSITY WORLD MAP</title>
-<script>
-        function Redirect()
-        {
-            window.location='LoginPage.html';
+    <title>INTENSITY GYM</title>
+    <script>
+        function Redirect() {
+            window.location = 'LoginPage.html';
         }
-		document.addEventListener('contextmenu',event => event.preventDefault()); 
+        document.addEventListener('contextmenu', event => event.preventDefault());
     </script>
 </head>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
 
 <style>
 /* CSS Reset */
-body{
-	font-family: 'Baloo Bhaina 2', cursive;
-	color: pink;
-	margin: 0px;
-	padding: 0px;
-	background: url('img/weight-lifting-.jpg');
-	}
-.left{
-	position: absolute;
-	left: 38px;
-	top: 20px;
-	display: inline-block;
-	/*border: 2px solid red;*/
+body {
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: #FF69B4; /* Pink text color */
+    margin: 0;
+    padding: 0;
+    background: url('img/weight-lifting.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
-.left img{
-	width: 136px;
-	filter: invert(100%);
+
+.left {
+    position: absolute;
+    left: 38px;
+    top: 20px;
+    display: inline-block;
 }
-.left div{
-	line-height: 1px;
-	font-size: 26px;
-	text-align: center;
+
+.left img {
+    width: 136px;
+    filter: invert(100%);
 }
-.mid{
-	display: block;
-	width: 41%;
-	margin: 35px auto;
-	/*border: 2px solid green;*/
+
+.left div {
+    line-height: 1px;
+    font-size: 26px;
+    text-align: center;
+    color: #FF69B4; /* Pink text color */
 }
-.right{
-	position: absolute;
-	right: 34px;
-	top: 43px;
-	display: inline-block;
-	/*border: 2px solid yellow;*/
+
+.mid {
+    display: block;
+    width: 41%;
+    margin: 35px auto;
 }
-.navbar{
-	display: inline-block;
+
+.right {
+    position: absolute;
+    right: 34px;
+    top: 43px;
+    display: inline-block;
 }
-.navbar li{
-	
-	display: inline-block;
-	font-size: 17px;
+
+.navbar {
+    display: inline-block;
 }
-.navbar li a{
-	color: pink;
-	text-decoration: none;
-	padding: 34px 10px;
-}	
-.navbar li a:hover, .navbar li a.active{
-	text-decoration: underline;
-	color: gray
-}	
-.btn{
-	font-family: 'Baloo Bhaina 2', cursive; 
-	margin: 0px 9px;
-	color: white;
-	background-color: black;
-	padding: 4px 14px;
-	/*border: 2px solid gray;*/
-	border-radius: 8px;
-	cursor: pointer;
+
+.navbar li {
+    display: inline-block;
+    font-size: 17px;
+    margin-right: 20px; /* Added margin between navigation items */
 }
-.btn:hover{
-	background-color: gray;
+
+.navbar li a {
+    color: #FF69B4; /* Pink text color */
+    text-decoration: none;
+    padding: 34px 10px;
 }
-.container{
-	/*border: 2px solid white;*/
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: #FFF; /* White text color on hover/active */
+}
+
+.btn {
+    font-family: 'Baloo Bhaina 2', cursive;
+    margin: 0px 9px;
+    color: #FFF; /* White text color on buttons */
+    background-color: #FF69B4; /* Pink button background color */
+    padding: 8px 20px; /* Adjusted padding for buttons */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #E60073; /* Lighter pink on hover */
+}
+
+.container {
     margin: 109px 318px;
     width: 41%;
     border-radius: 21px;
     text-align: center;
     font-family: fantasy;
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+    padding: 20px;
+    border: 2px solid #FF69B4; /* Pink border */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
 }
-.container h4{
-	display: inline-block;
-    text-align: center;
+
+.container h4 {
     font-size: 28px;
-    width: 93%;
-    padding: 18px;
-    margin: -13px;
 }
-.container h1{
-	display: inline-block;
-    text-align: center;
-	font-size: 83px;
-    width: 97%;
-	padding: 7px 0px;
-    margin: 0px 7px;
-   
+
+.container h1 {
+    font-size: 83px;
+    margin-top: 10px; /* Adjusted margin */
 }
-.container h2{
-	display: inline-block;
-    text-align: center;
-    padding: 0px 0px;
+
+.container h2 {
     font-size: 19px;
-    width: 118%;
-    margin: -38px;
+    margin-top: 10px; /* Adjusted margin */
 }
-.container button{
-	display: block;
-	width: 74%;
-	margin: 20px auto;
+
+.container button {
+    display: block;
+    width: 74%;
+    margin: 20px auto;
 }
 </style>
 <body>
-	<header class="header">
-		
-		<div class="left">
-			<img src="img/dumbbell.png" alt="">
-			<div>
-				Intesity Gym
-			</div>
-		</div>
-		<div class="mid">
-			<ul class="navbar">
-				<li><a href="#" class="active">Home</a></li>
-				<li><a href="images.html">Gallery</a></li>
-				<li><a href="our services.html">Services</a></li>
-				<li><a href="Registration Form.html">Registration Form</a></li>
-				<li><a href="Fee Structure.html">Fee Structure</a></li>
-			</ul>
-		</div>
-		<div class="right">
-			<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-			<div class="elfsight-app-837df9df-9706-41fb-93ef-4ce1578e972b"></div>
-			<a href="mailto:atharvkshirsagar106@gmail.com">
-			<button class="btn">Email Us</button> 
-			</a>
-		</div>
-		
-	</header>
-	<div class="container">
-		<h4>Sweat. Smile. and Repeat.</h4>
-		<h1> FITNESS WORLD </h1>
-		<h2>Sore Today, Strong Tomorrow</h2>
-		<button class="btn" onclick="Redirect()">Login here</button>
-	</div>
+    <header class="header">
+        <div class="left">
+            <img src="img/dumbbell.png" alt="">
+            <div>
+                INTENSITY GYM
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="images.html">Gallery</a></li>
+                <li><a href="our services.html">Services</a></li>
+                <li><a href="Registration Form.html">Registration Form</a></li>
+                <li><a href="Fee Structure.html">Fee Structure</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-837df9df-9706-41fb-93ef-4ce1578e972b"></div>
+            <a href="mailto:atharvkshirsagar106@gmail.com">
+                <button class="btn">Email Us</button>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <h4>Sweat. Smile. and Repeat.</h4>
+        <h1>FITNESS WORLD</h1>
+        <h2>Sore Today, Strong Tomorrow</h2>
+        <button class="btn" onclick="Redirect()">Login here</button>
+    </div>
 </body>
 </html>
